@@ -1,0 +1,11 @@
+{
+  "start_time": "2026-09-28 15:38:37",
+  "goal": "Create and install the Windows Server 2022 virtual machine for the Northstar Solutions Help Desk Lab",
+  "definition_of_done": "Windows Server 2022 is installed, boots successfully, and the server is ready for initial configuration.",
+  "dependencies": "",
+  "tech_context": "",
+  "timeboxing_minutes": 90,
+  "passive_capture": true,
+  "passive_interval": 30,
+  "paused_seconds": 0
+}
