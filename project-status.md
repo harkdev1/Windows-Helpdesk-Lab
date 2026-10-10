@@ -1,6 +1,6 @@
 # Windows Helpdesk Lab Project Status
 
-## Current status: In progress
+## Current status: Complete (v1.0; owner-confirmed)
 
 This file records the live project journey and preserves session history after every AutoDoc finish.
 
@@ -92,6 +92,19 @@ Domain northstar.local, domain controller NS-DC01, Windows Server 2025, VMware W
 
 ### Where we left off
 N/A
+
+---
+
+## Project completion update – 2026-10-10
+
+### Current status
+Complete (v1.0; owner-confirmed).
+
+### Completion scope
+The owner confirmed the Windows Helpdesk Lab v1.0 complete. The delivered scope is the documented Northstar domain lab foundation, Active Directory and DNS administration checks, reusable PowerShell diagnostics, and the configured/linked Northstar Workstation Policy.
+
+### Known limitation and future work
+Workstation-level GPO application remains unverified. Account-access, DNS/connectivity, and Group Policy behavior tickets are proposed future exercises, not completed incidents. These items are optional post-v1 extensions, not claims of unfinished v1 deliverables.
 
 ---
 

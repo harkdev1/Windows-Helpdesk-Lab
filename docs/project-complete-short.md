@@ -1,46 +1,17 @@
 # Windows-Helpdesk-Lab
 
-Status: In progress
+Status: Complete
 
 ## Project story
-This concise summary outlines the ongoing development of the 'Windows-Helpdesk-Lab' project, a practical environment for technical skill development.
-
----
-
-### 1. Project story
-The `Windows-Helpdesk-Lab` project is establishing a simulated corporate IT environment designed to refine practical Windows Server administration, Group Policy management, and PowerShell-based troubleshooting skills. Current work focuses on building out foundational Active Directory and DNS services, implementing security policies through Group Policy Objects (GPOs), and developing reusable PowerShell scripts to streamline common helpdesk operations. This ongoing effort emphasizes a well-documented, verifiable, and hands-on approach to modern IT infrastructure management.
-
-### 2. Key achievements
-*   **Core Infrastructure Establishment:** Configured a Windows Server 2025 domain controller (`NS-DC01`) for the `northstar.local` domain, including static IP assignment and foundational Active Directory and DNS services.
-*   **Group Policy Implementation:** Designed and deployed the 'Northstar Workstation Policy' GPO, linking it to the 'Northstar Computers' Organizational Unit (OU) and configuring a key security setting to rename the local guest account to 'DisabledGuest'.
-*   **PowerShell Tooling Development:** Created and iteratively refined `Get-HelpdeskSystemInfo.ps1`, a reusable PowerShell script for standardized system information retrieval and diagnostics, integrated for efficient troubleshooting within the lab.
-*   **System Health & Security Validation:** Performed comprehensive health checks of Active Directory, DNS, and critical services (`NTDS`, `Netlogon`) using `dcdiag` and PowerShell, alongside validating 'Employees Helpdesk' and 'IT-Admins' group memberships.
-*   **Documentation & Repository Management:** Leveraged an automated screenshot workflow for evidence capture and established repository hygiene with a `.gitignore` file to manage local session state.
-
-### 3. Lessons learned
-*   **Interface Navigation Proficiency:** Initial friction encountered in navigating complex administrative interfaces like Group Policy Management underscored the value of deep familiarity for efficient configuration.
-*   **Value of Reusable Automation:** Developing and iterating on PowerShell scripts significantly enhances the efficiency and consistency of system diagnostics and information retrieval.
-*   **Scoped Execution:** Focused, time-boxed sessions with clear definitions of done prove effective in achieving measurable progress, allowing for strategic deferral of certain validations to optimize immediate goals.
-*   **Multi-Layered Verification:** Emphasizing verification of configurations (e.g., GPO creation and linking) independent of their end-user application is crucial for building robust and reliable systems.
-
-### 4. Next steps
-*   Verify the application and impact of the 'Northstar Workstation Policy' GPO on domain-joined workstations.
-*   Continue to expand and refine helpdesk-oriented PowerShell scripts and automation within the lab environment.
-*   Further integrate and automate documentation processes for continuous project transparency.
-
-### 5. Proof points
-*   `Northstar Workstation Policy Configured`
-*   `NS-DC01 Powershell System Troubleshooting`
-*   `Powershell HelpDesk System Info Script & Execution`
-*   `Final DNS health check`
-*   `ad-structure-users-and-groups`
-*   `Windows Server 2025 Installation Progress on NS-DC01`
-*   `NS-DC01 static IP configured`
+Windows-Helpdesk-Lab v1.0 is complete as a documented small-business Windows domain lab. It establishes the Northstar server, Active Directory, and DNS foundation; records directory and service checks; and includes a reusable PowerShell system-information report. The Northstar Workstation Policy is configured and linked, but application on a domain-joined workstation was not verified.
 
 ## What we shipped
-- The project was completed with a clear objective, technical execution, and proof captured in the logs.
-- The implementation and project records are documented in the repository for future context.
-- The work can be reviewed quickly by anyone familiar with the project.
+- A documented Windows Server domain-controller, Active Directory, and DNS lab foundation.
+- Recorded directory/group checks, DNS health diagnostics, and a reusable PowerShell system-information script.
+- A configured and linked workstation GPO, with client-side application clearly left unverified.
+- Evidence and session history supporting the owner-confirmed v1.0 scope.
+
+The account-access, DNS/connectivity, and Group Policy behavior tickets are proposed future exercises, not completed incidents.
 
 ## Key proof moments
 ### Highlight: Powershell Helpdesk System Info Script Execution
@@ -57,8 +28,9 @@ This screenshot shows the current configuration or system state being reviewed a
 ## Lessons learned
 - Keep documentation close to delivery.
 - Use screenshots as proof points.
-- Write the project story in plain language for future reviewers.
+- Write the story in plain language for future employers and collaborators.
 
 ## Next steps
-- Continue from the handoff notes and current project status.
-- Capture final cleanup or deployment follow-up items as they are completed.
+- Optional post-v1: verify the Northstar Workstation Policy on a domain-joined workstation.
+- Optional post-v1: complete clearly labeled account-access, DNS/connectivity, and Group Policy practice tickets.
+- Sanitize selected evidence before public portfolio use.

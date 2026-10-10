@@ -4,42 +4,10 @@
 
 <!-- autodoc:project-snapshot:start -->
 
-## Status: In progress
+## Status: Complete
 
 ## Project summary
-This concise summary outlines the ongoing development of the 'Windows-Helpdesk-Lab' project, a practical environment for technical skill development.
-
----
-
-### 1. Project story
-The `Windows-Helpdesk-Lab` project is establishing a simulated corporate IT environment designed to refine practical Windows Server administration, Group Policy management, and PowerShell-based troubleshooting skills. Current work focuses on building out foundational Active Directory and DNS services, implementing security policies through Group Policy Objects (GPOs), and developing reusable PowerShell scripts to streamline common helpdesk operations. This ongoing effort emphasizes a well-documented, verifiable, and hands-on approach to modern IT infrastructure management.
-
-### 2. Key achievements
-*   **Core Infrastructure Establishment:** Configured a Windows Server 2025 domain controller (`NS-DC01`) for the `northstar.local` domain, including static IP assignment and foundational Active Directory and DNS services.
-*   **Group Policy Implementation:** Designed and deployed the 'Northstar Workstation Policy' GPO, linking it to the 'Northstar Computers' Organizational Unit (OU) and configuring a key security setting to rename the local guest account to 'DisabledGuest'.
-*   **PowerShell Tooling Development:** Created and iteratively refined `Get-HelpdeskSystemInfo.ps1`, a reusable PowerShell script for standardized system information retrieval and diagnostics, integrated for efficient troubleshooting within the lab.
-*   **System Health & Security Validation:** Performed comprehensive health checks of Active Directory, DNS, and critical services (`NTDS`, `Netlogon`) using `dcdiag` and PowerShell, alongside validating 'Employees Helpdesk' and 'IT-Admins' group memberships.
-*   **Documentation & Repository Management:** Leveraged an automated screenshot workflow for evidence capture and established repository hygiene with a `.gitignore` file to manage local session state.
-
-### 3. Lessons learned
-*   **Interface Navigation Proficiency:** Initial friction encountered in navigating complex administrative interfaces like Group Policy Management underscored the value of deep familiarity for efficient configuration.
-*   **Value of Reusable Automation:** Developing and iterating on PowerShell scripts significantly enhances the efficiency and consistency of system diagnostics and information retrieval.
-*   **Scoped Execution:** Focused, time-boxed sessions with clear definitions of done prove effective in achieving measurable progress, allowing for strategic deferral of certain validations to optimize immediate goals.
-*   **Multi-Layered Verification:** Emphasizing verification of configurations (e.g., GPO creation and linking) independent of their end-user application is crucial for building robust and reliable systems.
-
-### 4. Next steps
-*   Verify the application and impact of the 'Northstar Workstation Policy' GPO on domain-joined workstations.
-*   Continue to expand and refine helpdesk-oriented PowerShell scripts and automation within the lab environment.
-*   Further integrate and automate documentation processes for continuous project transparency.
-
-### 5. Proof points
-*   `Northstar Workstation Policy Configured`
-*   `NS-DC01 Powershell System Troubleshooting`
-*   `Powershell HelpDesk System Info Script & Execution`
-*   `Final DNS health check`
-*   `ad-structure-users-and-groups`
-*   `Windows Server 2025 Installation Progress on NS-DC01`
-*   `NS-DC01 static IP configured`
+Windows-Helpdesk-Lab v1.0 is complete as a documented small-business Windows domain lab. The delivered foundation includes NS-DC01, the `northstar.local` Active Directory and DNS environment, Northstar directory structure and test groups, recorded DNS and service checks, and the reusable `Get-HelpdeskSystemInfo.ps1` diagnostic report. The Northstar Workstation Policy is configured and linked to Northstar Computers; application on a domain-joined workstation remains unverified.
 
 ## Latest session
 ### Work completed
@@ -102,14 +70,8 @@ Notes:
 
 <!-- autodoc:project-snapshot:end -->
 
-## Status: In progress
-
-## Latest session – 2026-10-10
-**Goal:** Complete and validate remaining Helpdesk Lab MVP work across Group Policy, PowerShell troubleshooting, and a practical support scenario.
-
-**Completed:** Created and linked the Northstar Workstation Policy GPO, configured the local guest account rename, ran system/network/event diagnostics on NS-DC01, and created and executed `Get-HelpdeskSystemInfo.ps1`. Screenshots document the policy, diagnostics, and script execution.
-
-**Duration:** 45 minutes. **Friction:** Locating the account-renaming setting in Group Policy Management. **Follow-up:** Verify that the policy applies on a domain-joined workstation; the session review noted this is not yet confirmed.
+## Project completion
+The project owner has confirmed Windows Helpdesk Lab v1.0 complete. Workstation-level GPO application remains an explicitly documented limitation, not a claimed result. Account-access, DNS/connectivity, and Group Policy behavior tickets are proposed future portfolio extensions, not completed incidents.
 
 ## Project summary
 This project is a mock corporate Windows helpdesk environment designed to practice common IT support scenarios, troubleshooting workflows, and user support operations. The goal is to simulate a realistic managed desktop environment while keeping evidence, techniques, and resolutions organized.
@@ -140,11 +102,10 @@ cd D:\Projects\Windows-Helpdesk-Lab
 4. apply the troubleshooting steps
 5. document the resolution and lessons learned
 
-## Current focus
-- Windows troubleshooting and diagnosis
-- user support scenarios
-- endpoint and identity problem resolution
-- evidence-based ticket documentation
+## Optional post-v1 extensions
+- Verify Northstar Workstation Policy application on a domain-joined workstation.
+- Build controlled account-access, DNS/connectivity, and Group Policy practice tickets with evidence and acceptance checks.
+- Review and sanitize screenshots before public portfolio use.
 
 ## Project structure
 ```text
