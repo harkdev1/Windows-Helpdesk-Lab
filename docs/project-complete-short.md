@@ -1,30 +1,33 @@
 # Windows Helpdesk Lab
 
-Status: Active lab / training environment
+Status: Current focus: Group Policy, PowerShell diagnostics, and practical helpdesk validation
 
 ## Project story
-Windows Helpdesk Lab was created to simulate common helpdesk and troubleshooting scenarios in a realistic Windows environment. The purpose is to practice issue resolution, support workflows, and evidence-based diagnosis while keeping every step readable and easy to review later.
+The latest Windows Helpdesk Lab phase focused on building the core of a realistic support environment: Group Policy configuration, practical system diagnostics, and reusable PowerShell tooling for helpdesk-style troubleshooting. The immediate goal was to turn the lab into something useful for real support scenarios, not just a collection of tasks and screenshots.
 
-## Key achievements
-- Established a realistic Windows support lab structure for troubleshooting practice.
-- Organized the environment around ticket workflows, evidence capture, and remediation notes.
-- Created a repeatable process for diagnosing issues and documenting outcomes.
-- Made the repo easy to revisit for training, support practice, and future handoff.
+## What matters most right now
+- Workstation policy deployment and local account hardening are being validated.
+- PowerShell-based system checks are now part of the lab workflow.
+- The project is evolving from basic setup into a reusable helpdesk operations pattern.
+
+## Key proof moments
+### Highlight: Workstation policy configuration
+![Workstation policy configuration](../screenshots/2026-10-10_094549_northstar-workstation-policy-configured.png)
+
+### Highlight: NS-DC01 troubleshooting output
+![NS-DC01 troubleshooting output](../screenshots/2026-10-10_095004_ns-dc01-powershell-system-troubleshooting.png)
+
+### Highlight: Helpdesk script execution
+![Helpdesk script execution](../screenshots/2026-10-10_095506_powershell-helpdesk-system-info-script-execution.png)
 
 ## Lessons learned
-- A good helpdesk workflow depends on clean evidence and clear notes.
-- Repeatable troubleshooting steps are easier to teach than ad hoc fixes.
-- Capturing screenshots and environment state early reduces confusion later.
-- The best documentation is the one that supports the next responder.
+- Clear lab work has to be paired with clean evidence or it becomes hard to trust.
+- PowerShell diagnostics are most valuable when they are reusable and consistent.
+- GPO setup is easy to oversimplify; real support work requires verification after applying the change.
+- Good troubleshooting notes make the lab useful beyond the moment it was created.
 
 ## Next steps
-- Continue expanding common Windows troubleshooting scenarios.
-- Capture a stronger set of issue-response examples and resolution notes.
-- Keep the README and status journal aligned with the active lab focus.
-- Turn the strongest cases into reusable runbooks and training examples.
-
-## Proof points
-- The project is organized around logs, screenshots, and a defined lab workflow.
-- The README documents the environment, tasks, and support scenarios.
-- The status file keeps a continuing running record of the lab’s journey.
-- The repo is structured for practical review, training, and operational continuity.
+- Verify the GPO is applied to a joined workstation and the result matches the intended change.
+- Expand the lab with more ticket-like failure scenarios and remediation steps.
+- Keep building reusable PowerShell helpers and system health checks.
+- Maintain consistent notes and screenshots so the lab stays reviewable.
