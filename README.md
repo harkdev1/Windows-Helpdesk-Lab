@@ -2,7 +2,14 @@
 
 > **Project status:** See [project-status.md](project-status.md) for the live status and journey, or the [short](docs/project-complete-short.md) and [long](docs/project-complete-long.md) project summaries.
 
-Status: Active lab / training environment
+## Status: In progress
+
+## Latest session – 2026-10-10
+**Goal:** Complete and validate remaining Helpdesk Lab MVP work across Group Policy, PowerShell troubleshooting, and a practical support scenario.
+
+**Completed:** Created and linked the Northstar Workstation Policy GPO, configured the local guest account rename, ran system/network/event diagnostics on NS-DC01, and created and executed `Get-HelpdeskSystemInfo.ps1`. Screenshots document the policy, diagnostics, and script execution.
+
+**Duration:** 45 minutes. **Friction:** Locating the account-renaming setting in Group Policy Management. **Follow-up:** Verify that the policy applies on a domain-joined workstation; the session review noted this is not yet confirmed.
 
 ## Project summary
 This project is a mock corporate Windows helpdesk environment designed to practice common IT support scenarios, troubleshooting workflows, and user support operations. The goal is to simulate a realistic managed desktop environment while keeping evidence, techniques, and resolutions organized.
